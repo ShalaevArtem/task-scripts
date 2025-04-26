@@ -2,13 +2,19 @@
 <html lang="en">
     <head>
         <title>Scripts</title>
-        <script src="src/scripts/defer.js" defer></script>
-        <script src="src/scripts/async.js" async></script>
+        <!-- Отложенный скрипт (правильное расположение в head) -->
+        <script src="scripts/defer.js" defer></script>
     </head>
     <body>
+        <!-- Встроенный скрипт -->
         <script>
             document.body.append('inline');
         </script>
-        <script src="src/scripts/sync.js"></script>
+
+        <!-- Синхронный скрипт -->
+        <script src="scripts/sync.js"></script>
+
+        <!-- Асинхронный скрипт -->
+        <script src="scripts/async.js" async></script>
     </body>
 </html>
